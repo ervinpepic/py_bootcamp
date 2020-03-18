@@ -1,0 +1,6 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "editor.fontSize": 15,
+    "python.pythonPath": "/usr/local/bin/python3"
+}
