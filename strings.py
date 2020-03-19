@@ -35,7 +35,26 @@ print(course_python1)
 
 first_name = "Ervin"
 last_name = "Pepic"
-full_name = first_name + ' ' + last_name # old way
-formated_full_name = f"{first_name} {last_name}" #the curly braces are ignored at runtime
+full_name = first_name + ' ' + last_name  # old way
+# the curly braces are ignored at runtime
+formated_full_name = f"{first_name} {last_name}"
 print(full_name)
 print(formated_full_name)
+
+
+# String functions
+
+# len() # it's general function it's not just for string
+
+word_for_testing_string_fuction = "Some words just to test how string fucntions woork..."
+print(word_for_testing_string_fuction.upper())
+print(word_for_testing_string_fuction.lower())
+print(word_for_testing_string_fuction.title())
+print(word_for_testing_string_fuction.find("jus"))
+
+# strip method()..cut all white spaces before and after start of string, also we have lstrip for left strio or rstrip
+strip_string_test = "   This need to     beeee     stripped   "
+print(strip_string_test.strip())
+print(strip_string_test.replace("e", "l"))
+print("p" not in strip_string_test)
+print("p" in strip_string_test)
