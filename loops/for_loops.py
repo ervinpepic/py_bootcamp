@@ -1,7 +1,7 @@
-#use loop to create repetition
+# use loop to create repetition
 
 for number in range(1, 10, 2):
-    print('Hello', number, number  * ".")
+    print('Hello', number, number * ".")
 
 
 # for - else

@@ -36,4 +36,3 @@ if high_income or good_credit and not student:
 # because on the first condition python interpreter will interupt the rest of the statement and
 # leave the if statement and will not consider other condition
 
-
