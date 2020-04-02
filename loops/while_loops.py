@@ -17,3 +17,7 @@ while True:
     print("ECHO", command)
     if command.lower() == "quit":
         break
+
+
+def igo(num):
+    return num
