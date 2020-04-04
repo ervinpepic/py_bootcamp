@@ -43,10 +43,10 @@ first, second, third = numbers_2
 # first = [0]
 # second = [1]
 # third = [2]
-# if we have more komplex list but we need just a few values from that lists 
+# if we have more komplex list but we need just a few values from that lists
 # we can use *args syntax to solve that like this in example bellow:
 
-numbers_3 = [1, 2, 4, 5, 8, 12 ,15, 17]
+numbers_3 = [1, 2, 4, 5, 8, 12, 15, 17]
 fv, sc, *rest = numbers_3
 
 print(fv, rest)
