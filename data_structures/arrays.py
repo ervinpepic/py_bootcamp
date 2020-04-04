@@ -10,8 +10,8 @@ numbers.append(4)
 numbers.insert(0, 20)
 print(numbers)
 
-#the typecode in the initialization of the array, specifies the
-# type of data that array must use. 
-#If we try to put floating point number we will encounter an error
+# the typecode in the initialization of the array, specifies the
+# type of data that array must use.
+# If we try to put floating point number we will encounter an error
 
 numbers[1] = 1.2
