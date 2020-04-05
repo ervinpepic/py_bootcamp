@@ -25,6 +25,6 @@ print("After deletion", points_1)
 for key in points_1:
     print("First way of iteration over dict -> ", key, points_1[key])
 
-#second way
+# second way
 for key, value in points_1.items():
     print("Second way of iteration over dict -> ", key, value)
