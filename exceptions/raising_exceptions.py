@@ -1,4 +1,4 @@
-#if we test execution time of this code like this:
+# if we test execution time of this code like this:
 from timeit import timeit
 
 
