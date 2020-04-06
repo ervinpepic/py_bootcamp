@@ -37,3 +37,15 @@ else:
     print("No exception handled.")
 finally:
     file_open.close()
+
+# cleaning a little bit more using WITH. Now, we don't need
+# a finally clause as in example bellow
+try:
+    with open("handling_exception.py") as file:
+        print("File opened...")
+    user_in = int(input("Enter your age: "))
+    x = 10 / user_input
+except (ValueError, ZeroDivisionError):
+    print("Please enter a valid age")
+else:
+    print("No exception handled.")
