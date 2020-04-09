@@ -19,20 +19,28 @@ class Animal:
 
 
 # Child or sub class
-class Mammal(Animal):#this is where inheritance happen...
+class Mammal(Animal):  # this is where inheritance happen...
+
+    def __init__(self):  # her we override constructor from animal class
+        self.weight = 10
+        super().__init__()  # if we don't call this supper that menas we completely override
+        # constructor from animal class
+
     def walk(self):
         print("Walking")
 
 
 # Child or sub class
-class Fish(Animal):#this is where inheritance happen...
+class Fish(Animal):  # this is where inheritance happen...
     def swim(self):
         print("Swimming")
+
 
 mammal = Mammal()
 print("Age: ", mammal.age)
 mammal.eat()
 mammal.walk()
+print(mammal.weight)
 
 # if we want to check if this mammal variable is an instance of Mammal class(object)
 # we can check that using isinstance() method
