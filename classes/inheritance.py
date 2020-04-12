@@ -52,12 +52,13 @@ print(issubclass(Mammal, Animal))
 
 
 # Good Example of inheritance
+from abc import ABC, abstractmethod
 
 class InvalidOperationError(Exception):
     pass
 
 
-class Stream:
+class Stream(ABC):
     def __init__(self):
         self.oppened = False
 
@@ -69,6 +70,10 @@ class Stream:
     def close(self):
         if not self.oppened:
             raise InvalidOperationError("Stream is closed already")
+    
+    @abstractmethod
+    def read(self):
+        pass
 
 class FileStream(Stream):
     def read(self):
@@ -78,7 +83,13 @@ class NetworkStream(Stream):
     def read(self):
         print("Reading from a network...")
 
+class MemoryStream(Stream):
+    pass
+mem_stream = MemoryStream() # now we get the error...what is the problem..
+#the problem is that we must implement the abstratc method from the base class...
+
+#stream = Stream() # so..now we cant instatiate that class
 
 # what is not good in the example above? We can instatiate the Stream base class and 
 # that is not what we want, we just want and need to instatiate child classes not parrent Stream class
-# so we need to fix that using and abastratc class and abstract method decorator
+# so we need to fix that using and abastratc class and abstract method decorator`
