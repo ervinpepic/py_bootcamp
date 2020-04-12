@@ -9,6 +9,9 @@
 # Parent or Base class
 
 
+from abc import ABC, abstractmethod
+
+
 class Animal:
 
     def __init__(self):
@@ -52,7 +55,7 @@ print(issubclass(Mammal, Animal))
 
 
 # Good Example of inheritance
-from abc import ABC, abstractmethod
+
 
 class InvalidOperationError(Exception):
     pass
@@ -66,30 +69,35 @@ class Stream(ABC):
         if self.oppened:
             raise InvalidOperationError("Error while streaming...")
         self.oppened = True
-    
+
     def close(self):
         if not self.oppened:
             raise InvalidOperationError("Stream is closed already")
-    
+
     @abstractmethod
     def read(self):
         pass
+
 
 class FileStream(Stream):
     def read(self):
         print("Reading from a file...")
 
+
 class NetworkStream(Stream):
     def read(self):
         print("Reading from a network...")
 
+
 class MemoryStream(Stream):
-    pass
-mem_stream = MemoryStream() # now we get the error...what is the problem..
-#the problem is that we must implement the abstratc method from the base class...
+    def read(self):
+        print("reading from memory stream") 
 
-#stream = Stream() # so..now we cant instatiate that class
 
-# what is not good in the example above? We can instatiate the Stream base class and 
+mem_stream = MemoryStream()  # now it's fixed
+
+# stream = Stream() # so..now we cant instatiate that class
+
+# what is not good in the example above? We can instatiate the Stream base class and
 # that is not what we want, we just want and need to instatiate child classes not parrent Stream class
 # so we need to fix that using and abastratc class and abstract method decorator`
