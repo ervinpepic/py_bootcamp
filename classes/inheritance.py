@@ -49,3 +49,31 @@ print(mammal.weight)
 
 print(isinstance(mammal, object))
 print(issubclass(Mammal, Animal))
+
+
+# Good Example of inheritance
+
+class InvalidOperationError(Exception):
+    pass
+
+
+class Stream:
+    def __init__(self):
+        self.oppened = False
+
+    def open(self):
+        if self.oppened:
+            raise InvalidOperationError("Error while streaming...")
+        self.oppened = True
+    
+    def close(self):
+        if not self.oppened:
+            raise InvalidOperationError("Stream is closed already")
+
+class FileStream(Stream):
+    def read(self):
+        print("Reading from a file...")
+
+class NetworkStream(Stream):
+    def read(self):
+        print("Reading from a network...")
