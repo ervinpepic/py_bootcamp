@@ -77,3 +77,8 @@ class FileStream(Stream):
 class NetworkStream(Stream):
     def read(self):
         print("Reading from a network...")
+
+
+# what is not good in the example above? We can instatiate the Stream base class and 
+# that is not what we want, we just want and need to instatiate child classes not parrent Stream class
+# so we need to fix that using and abastratc class and abstract method decorator
