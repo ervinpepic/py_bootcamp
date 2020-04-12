@@ -12,9 +12,9 @@ class TextBox(UIControl):
         print("Drawing a text box...")
 
 
-class DropDownList(UIControl): #we can remove this inheritance in the parentheses, 
-                                #beacuse python is da Dynamic typing language...
-                                # that is called DuckTyping
+class DropDownList(UIControl):  # we can remove this inheritance in the parentheses,
+    # beacuse python is da Dynamic typing language...
+    # that is called DuckTyping
     def draw(self):
         print("Drawing a drop down list...")
 

@@ -36,5 +36,5 @@ class Swimmer:
 class FlyFish(Flyer, Swimmer):
     pass
 
-#These abstract class are completely independet, and each class 
+# These abstract class are completely independet, and each class
 # has it's own methods that describe exactly what object can do.Î

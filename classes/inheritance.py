@@ -91,7 +91,7 @@ class NetworkStream(Stream):
 
 class MemoryStream(Stream):
     def read(self):
-        print("reading from memory stream") 
+        print("reading from memory stream")
 
 
 mem_stream = MemoryStream()  # now it's fixed
