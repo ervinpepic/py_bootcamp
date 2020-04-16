@@ -9,7 +9,8 @@ from pathlib import Path
 # Path() / "modules/shopping" / "__init__.py" # we can conactinate paths like this
 # Path.home() # or we can get home dir with this builtin function in path class HOME
 
-path = Path("modules/shopping/__init__.py") # set shopping direcotry as active dir
+# set shopping direcotry as active dir
+path = Path("modules/shopping/__init__.py")
 
 # we listed bellow some usefull methods for working with paths
 

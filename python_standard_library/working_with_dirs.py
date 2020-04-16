@@ -17,5 +17,6 @@ p = [paths for paths in path.iterdir() if paths.is_dir()]
 print(p)
 
 
-py_files = [files for files in path.rglob("*.py")] # if we want to search recursively we must use rglob
+# if we want to search recursively we must use rglob
+py_files = [files for files in path.rglob("*.py")]
 print(py_files)
