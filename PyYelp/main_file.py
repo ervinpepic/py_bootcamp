@@ -1,9 +1,9 @@
 import requests
-
+import config
 url = "https://api.yelp.com/v3/businesses/search"
-apiKey = "8CwqCwTMexHL84WQmrCksReZqu-_FgAUQPFnAzxeHU2n5gW4qBR8tVtwZmu4qZwcjqrqNrMMmSJpr-NMbYJB8y2L76Y-0Yl2itPXtNI8js5dPvI-X3FJUJ3ZFXWtXnYx"
+
 headers = {
-    "Authorization": "Bearer " + apiKey
+    "Authorization": "Bearer " + config.apiKey
 }
 params = {
     "term": "Barber",
