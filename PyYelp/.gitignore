@@ -1,4 +1,4 @@
 config.py
-/bin
-/lib
+bin
+lib
 pyenv.cfg
