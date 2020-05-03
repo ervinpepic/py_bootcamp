@@ -2,5 +2,5 @@
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "editor.fontSize": 15,
-    "python.pythonPath": "PyYelp/bin/python"
+    "python.pythonPath": "PyText/bin/python"
 }

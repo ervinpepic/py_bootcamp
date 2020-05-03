@@ -1,0 +1,2 @@
+acc_sid = "AC31e5dc9007cd12574bc6a1905ae2a514"
+auth_token = "790a0122c342e402420b59cff86b5047"
