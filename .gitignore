@@ -131,3 +131,5 @@ dmypy.json
 
 PyText/config.py
 PyYelp/config.py
+py_crawler/bin/*.*
+py_crawler/lib/*.*
