@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 
-PyText/configuration.py
+PyText/config.py
 PyYelp/config.py
